@@ -1,0 +1,262 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: #f3f4f6;
+}
+
+
+/* =========================
+   LOGIN CONTAINER
+========================= */
+
+.login-container {
+    width: 380px;
+
+    padding: 40px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.35);
+
+    text-align: left;
+}
+
+
+/* =========================
+   JUDUL
+========================= */
+
+h1 {
+    text-align: center;
+
+    font-size: 32px;
+
+    color: #18181b;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   WELCOME
+========================= */
+
+.welcome {
+    text-align: center;
+
+    color: #71717a;
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    display: block;
+
+    width: 120px;
+    height: auto;
+
+    object-fit: contain;
+
+    margin: 0 auto 24px;
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+label {
+    display: block;
+
+    color: #27272a;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+input {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #d4d4d8;
+
+    border-radius: 12px;
+
+    background-color: #fafafa;
+
+    color: #18181b;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+/* Input saat diklik */
+
+input:focus {
+    border-color: #7c3aed;
+
+    background-color: white;
+
+    box-shadow:
+        0 0 0 4px
+        rgba(124, 58, 237, 0.12);
+}
+
+
+/* =========================
+   LUPA PASSWORD
+========================= */
+
+.forgot {
+    text-align: right;
+
+    margin-top: -8px;
+
+    margin-bottom: 22px;
+}
+
+.forgot a {
+    color: #7c3aed;
+
+    font-size: 13px;
+
+    text-decoration: none;
+}
+
+.forgot a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7c3aed,
+            #db2777
+        );
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Hover Button */
+
+button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(124, 58, 237, 0.35);
+}
+
+
+/* =========================
+   REGISTER
+========================= */
+
+.register {
+    text-align: center;
+
+    color: #71717a;
+
+    font-size: 13px;
+
+    margin-top: 25px;
+}
+
+.register a {
+    color: #7c3aed;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    .login-container {
+        width: 90%;
+
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
